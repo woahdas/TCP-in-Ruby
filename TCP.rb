@@ -9,7 +9,7 @@ loop do
 	http_request = ""							  #reading the http request
 	while(line = socket.gets) && (line != "\r\n") #
 		http_request += line					  #
-	end											  #
+	end								  #
 	STDERR.puts http_request					  #
 	socket.close
 end
