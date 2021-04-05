@@ -6,8 +6,8 @@ server = TCPServer.new ('localhost', 2345) #2345 is TCP/UDP
 loop do
 	socket = server.accept #wait for connection
 	
-	http_request = ""							  #reading the http request
-	while(line = socket.gets) && (line != "\r\n") #
+	http_request = ""						  #reading the http request
+	while(line = socket.gets) && (line != "\r\n") 			  #
 		http_request += line					  #
 	end								  #
 	STDERR.puts http_request					  #
